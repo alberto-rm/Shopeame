@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-grid.min.css">
+    <script src="./products.js" defer></script>
+</head>
+
+<body>
+    <header class="b-header">
+        <div class="b-header__container">
+            <p class="header__title"><span class="icon-guitar-pick"></span> Shopeame!</p>
+        </div>
+        <div class="b-nav">
+            <ul class="ul-list">
+                <nav class="b-nav__list">
+                    <span class="icon-acoustic-guitar"></span>
+                    <li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+                </nav>
+                <nav class="b-nav__list">
+                    <span class="icon-corona-de-laurel"></span>
+                    <li class="menu__item"><a href="products.html" class="menu__link">Prods.</a></li>
+                </nav>
+                <nav class="b-nav__list">
+                    <span class="icon-guitar-pick"></span>
+                    <li class="menu__item"><a href="management.html" class="menu__link">Gestion</a></li>
+                </nav>
+            </ul>
+        </div>
+    </header>
+    <main class="b-container__main">
+        <form id="b-container__form">
+            <h2 class="b-title__main">Creacion/edicion de productos </h2>
+
+            <div class="b-form">
+                <label for="name">Nombre del producto:</label>
+                <input id="name" type="text" placeholder="Por ej: Tiesto para la planta">
+            </div>
+            <div class="b-form">
+                <label for="name">Precio:</label>
+                <input id="price" type="text" placeholder="Por ej:9,50">
+            </div>
+            <div class="b-form">
+                <label for="name">Descripcion:</label>
+                <input id="description" type="text" placeholder="Por ej: Lo mas vendido este mes">
+            </div>
+            <div class="b-form">
+                <label for="name">Ruta de la imagen:</label>
+                <input id="image" type="text" placeholder="Por ej: http://blabla.com/img.jpg">
+            </div>
+            <div class="b-form">
+                <label for="name">Opiniones:</label>
+                <input id="rating" type="text" placeholder="Por ej: 4.28">
+            </div>
+            <p class="b-button"> <input type="submit" class="btn-orange" value="Guardar"></p>
+        </form>
+        <span class="b-container__barra"></span>
+
+        <div class="b-preview__container">
+            <form class="b-form__preview">
+                <h2 class="b-preview__title" style="text-align: center; margin-right: 40px">Preview del producto </h2>
+                <div class="b-preview__menu">
+                    <img class="b-preview__img">
+                    <div class="b-preview__name"></div>
+                    <div class="b-preview__price"></div>
+                    <div class="b-preview__description"></div>
+                    <div class="b-preview__stars"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="b-footer">
+        <p class="b-footer__p d-flex justify-content-center">Siguenos en:</p>
+        <div class="b-footer__social d-flex justify-content-center">
+            <a href="" class="social__link">Twitter</a>
+            <span class="b-footer__barra">|</span>
+            <a href="" class="social__link">Facebook</a>
+            <span class="b-footer__barra">|</span>
+            <a href="" class="social__link">Instagram</a>
+            <span class="b-footer__barra">|</span>
+            <a href="" class="social__link">Tiktok</a>
+            </ul>
+        </div>
+        <p class="b-footer__copy">Copyright Shopeame @ 2021</p>
+    </footer>
+</body>
+
+</html>
